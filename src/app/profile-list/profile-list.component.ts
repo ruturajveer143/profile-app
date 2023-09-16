@@ -16,7 +16,7 @@ export class ProfileListComponent {
       description: 'Web Developer',
       address: 'Pune, Maharshtra',
       summery: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure unde doloribus estdolore consequatur dolorum qui fugit! Dicta rem, expedita cum praesentium, asperiores nesciuntcommodi doloremque eveniet et non omnis!',
-      mapLink: 'https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-2.webp',
+     
       showSummary: false, 
     },
     {
@@ -26,7 +26,7 @@ export class ProfileListComponent {
       description: 'Full Stack Developer',
       address: 'Mumbai, Maharshtra',
       summery: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure unde doloribus estdolore consequatur dolorum qui fugit! Dicta rem, expedita cum praesentium, asperiores nesciuntcommodi doloremque eveniet et non omnis!',
-      mapLink: 'https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-2.webp',
+     
       showSummary: false, 
     },
     {
@@ -36,7 +36,7 @@ export class ProfileListComponent {
       description: 'Java Developer',
       address: 'Satara, Maharshtra',
       summery: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure unde doloribus estdolore consequatur dolorum qui fugit! Dicta rem, expedita cum praesentium, asperiores nesciuntcommodi doloremque eveniet et non omnis!',
-      mapLink: 'https://www.google.com/maps?q=40.712776,-74.005974',
+     
      
     },
 
