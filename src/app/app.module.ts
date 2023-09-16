@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ProfileListComponent } from './profile-list/profile-list.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AdminComponent } from './admin/admin.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileListComponent,
     NavbarComponent,
-    AdminComponent
+    AdminComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,

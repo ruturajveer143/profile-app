@@ -1,5 +1,6 @@
-// profile-list.component.ts
+
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profile-list',
@@ -36,19 +37,17 @@ export class ProfileListComponent {
       address: 'Satara, Maharshtra',
       summery: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure unde doloribus estdolore consequatur dolorum qui fugit! Dicta rem, expedita cum praesentium, asperiores nesciuntcommodi doloremque eveniet et non omnis!',
       mapLink: 'https://www.google.com/maps?q=40.712776,-74.005974',
-      // showSummary: false, 
+     
     },
+
   ];
  
-// toggleSummary(profile: any) {
-//   profile.showSummary = !profile.showSummary;
-// }
 
-
-  selectedProfile: any;
+  constructor(private router: Router) {}
 
   showOnMap(profile: any) {
-    // Open the map link in a new tab/window
-    window.open(profile.mapLink, '_blank');
+    // Redirect to the map component with the profile's address as a parameter
+    this.router.navigate(['/map', profile.address]);
+
   }
 }
