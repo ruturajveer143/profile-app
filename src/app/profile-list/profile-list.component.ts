@@ -1,0 +1,54 @@
+// profile-list.component.ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-profile-list',
+  templateUrl: './profile-list.component.html',
+  styleUrls: ['./profile-list.component.css'],
+})
+export class ProfileListComponent {
+  profiles = [
+    {
+      id: 1,
+      name: 'Ruturaj  Veer',
+      photoUrl: 'https://m.media-amazon.com/images/I/41jLBhDISxL._SX300_SY300_QL70_FMwebp_.jpg',
+      description: 'Web Developer',
+      address: 'Pune, Maharshtra',
+      summery: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure unde doloribus estdolore consequatur dolorum qui fugit! Dicta rem, expedita cum praesentium, asperiores nesciuntcommodi doloremque eveniet et non omnis!',
+      mapLink: 'https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-2.webp',
+      showSummary: false, 
+    },
+    {
+      id: 2,
+      name: 'Rohit Mohite',
+      photoUrl: 'data:image/jpeg;base64,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',
+      description: 'Full Stack Developer',
+      address: 'Mumbai, Maharshtra',
+      summery: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure unde doloribus estdolore consequatur dolorum qui fugit! Dicta rem, expedita cum praesentium, asperiores nesciuntcommodi doloremque eveniet et non omnis!',
+      mapLink: 'https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-2.webp',
+      showSummary: false, 
+    },
+    {
+      id: 3,
+      name: 'Pallavi',
+      photoUrl: 'https://play-lh.googleusercontent.com/ZtO_zED7tjYkY2w0Tp5CSZIB_kR270PVQ3gk_Bo3dvrOHs8zx4KRDBjM3kcQuOlb_2O5',
+      description: 'Java Developer',
+      address: 'Satara, Maharshtra',
+      summery: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure unde doloribus estdolore consequatur dolorum qui fugit! Dicta rem, expedita cum praesentium, asperiores nesciuntcommodi doloremque eveniet et non omnis!',
+      mapLink: 'https://www.google.com/maps?q=40.712776,-74.005974',
+      // showSummary: false, 
+    },
+  ];
+ 
+// toggleSummary(profile: any) {
+//   profile.showSummary = !profile.showSummary;
+// }
+
+
+  selectedProfile: any;
+
+  showOnMap(profile: any) {
+    // Open the map link in a new tab/window
+    window.open(profile.mapLink, '_blank');
+  }
+}

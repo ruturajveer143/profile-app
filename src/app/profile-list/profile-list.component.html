@@ -1,0 +1,27 @@
+<!-- profile-list.component.html -->
+<h2 style="text-align: center;">Profiles:</h2>
+<section *ngFor="let profile of profiles">
+    <div class="container mt-3 w-50">
+        <div class="card mb-1" style="border-radius: 15px;">
+            <div class="card-body p-2">
+                <h2 class="mb-3">
+                    <a href="#!">
+                        <img [src]="profile.photoUrl" style="height: 50px; margin-right:5px;"
+                            alt="{{ profile.name }}" />
+                    </a>{{ profile.name }}
+                </h2>
+                <p class="small mb-0"><i class="far fa-star fa-lg"></i><b>{{ profile.description }}</b></p>
+                <p class="small mb-0"><i class="far fa-star fa-lg"></i><b>{{ profile.address }}</b></p>
+                <!-- Show/hide summary based on showSummary -->
+                <div>
+                    <p><i>{{ profile.summery }}</i></p>
+                </div>
+                <!-- <button type="button" class="btn btn-success" >
+                     (click)="toggleSummary(profile)" 
+                    {{ profile.showSummary ? 'Hide Summary' : 'Show Summary' }}
+                </button> -->
+                <button type="button" class="btn btn-primary" (click)="showOnMap(profile)">Summary</button>
+            </div>
+        </div>
+    </div>
+</section>
